@@ -8,6 +8,49 @@
 
 <body>
 	<!-- the entire body must be written by student -->
+	<div class="form-container">
+		<h1>Dog Adoption Application</h1>
+		<form id="dogAdoptionForm">
+			<!-- Name Input -->
+			<div class="form-group">
+				<label for="name">Name</label>
+				<input type="text" id="name" name="name" placeholder="Name" required>
+			</div>
+
+			<!-- Phone Number Input -->
+			<div class="form-group">
+				<label for="phone">Phone Number</label>
+				<input type="text" id="phone" name="phone" placeholder="Phone Number" required>
+			</div>
+
+			<!-- Address Input -->
+			<div class="form-group">
+				<label for="address">Address</label>
+				<input type="text" id="address" name="address" placeholder="Address" required>
+			</div>
+
+			<!-- Checkbox: Lived with a Dog -->
+			<div class="form-group checkbox-group">
+				<input type="checkbox" id="dogExperience" name="dogExperience" value="Have you ever lived with a Dog before?">
+				<label for="dogExperience">Have you ever lived with a Dog before?</label>
+			</div>
+
+			<!-- Multi-select Dropdown -->
+			<div class="form-group">
+				<label for="preferredBreeds">Please select your preferred breeds</label>
+				<select id="preferredBreeds" name="preferredBreeds" class="multi-select" multiple required>
+					<option value="Labrador">Labrador</option>
+					<option value="Golden Retriever">Golden Retriever</option>
+					<option value="German Shepherd">German Shepherd</option>
+					<option value="Bulldog">Bulldog</option>
+					<option value="Poodle">Poodle</option>
+				</select>
+			</div>
+
+			<!-- Submit Button -->
+			<button type="submit">Submit</button>
+		</form>
+	</div>
     <script type="text/javascript" src="./script.js">
 </script>
 
